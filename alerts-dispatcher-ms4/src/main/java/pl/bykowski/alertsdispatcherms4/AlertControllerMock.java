@@ -14,7 +14,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-@Controller
+//@Controller
 public class AlertControllerMock {
 
     private static final double MIN_USAGE = 50.0;
@@ -23,7 +23,7 @@ public class AlertControllerMock {
     private static final double CRITICAL_THRESHOLD = 80.0;
     private static final double MAX_VARIATION = 5.0;
 
-    @GetMapping("/get-alerts-mock")
+//    @GetMapping("/get-alerts-mock")
     public ResponseEntity<List<RamAlert>> getAlertsMock(@RequestParam(required = false) String level) {
         List<RamAlert> ramAlertList = generateAlerts();
 
@@ -60,9 +60,4 @@ public class AlertControllerMock {
                 .collect(Collectors.toList());
     }
 
-
-    @GetMapping("/health")
-    public String health() {
-        return "HEALTTH";
-    }
 }

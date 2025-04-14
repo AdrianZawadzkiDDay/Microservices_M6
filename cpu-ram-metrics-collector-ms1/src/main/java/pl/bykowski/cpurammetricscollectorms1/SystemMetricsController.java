@@ -60,7 +60,7 @@ public class SystemMetricsController {
         return "Metrics: " + metrics ;
     }
 
-    @Scheduled(fixedRate = 10000) // co 10 sekund
+    @Scheduled(fixedRate = 60000) // co 10 sekund
     public String getSeparateSystemMetrics() {
         // CPU Metrics
         long[] newTicks = processor.getSystemCpuLoadTicks();

@@ -23,7 +23,7 @@ public class MetricsConsumer {
     private final KafkaTemplate<String, Alert> alertKafkaTemplate;
 
     // Progi dla alertów
-    private static final double CPU_USAGE_THRESHOLD = 50.0;
+    private static final double CPU_USAGE_THRESHOLD = 20.0;
     private static final double RAM_USAGE_THRESHOLD = 60.0;
     private static final long WINDOW_SECONDS = 300; // 5 minut
     private final ConcurrentHashMap<String, List<CpuMetrics>> cpuMetricsStore = new ConcurrentHashMap<>();
