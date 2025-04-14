@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="data-aggregator-analyzer-ms3" />
         <module name="cpu-ram-metrics-collector-ms1" />
+        <module name="alert-microservice-application" />
         <module name="shared-models" />
         <module name="alerts-dispatcher-ms4" />
       </profile>
@@ -15,6 +16,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="alert-microservice-application" options="-parameters" />
       <module name="alerts-dispatcher-ms4" options="-parameters" />
       <module name="cpu-ram-metrics-collector-ms1" options="-parameters" />
       <module name="data-aggregator-analyzer-ms3" options="-parameters" />

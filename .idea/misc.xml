@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/alerts-dispatcher-ms4/pom.xml" />
         <option value="$PROJECT_DIR$/data-aggregator-analyzer-ms3/pom.xml" />
         <option value="$PROJECT_DIR$/cpu-ram-metrics-collector-ms1/pom.xml" />
+        <option value="$PROJECT_DIR$/alert-microservice-application/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
